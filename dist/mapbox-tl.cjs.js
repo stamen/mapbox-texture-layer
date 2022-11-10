@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 class TextureLayer {
   constructor(id, tileJson, onAddCallback, renderCallback, preRenderCallback) {
     this.map = null;
@@ -70,4 +68,4 @@ class TextureLayer {
   }
 }
 
-exports.TextureLayer = TextureLayer;
+module.exports = TextureLayer;

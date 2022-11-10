@@ -35,7 +35,7 @@ const map = new mapboxgl.Map({
     zoom: 0
 });
 map.on('load', () => {
-    let customlayer = new mapboxgl.TextureLayer(
+    let customlayer = new TextureLayer(
         'test', 
         {
             type: 'raster',

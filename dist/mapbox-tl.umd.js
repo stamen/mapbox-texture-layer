@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.mapboxgl = global.mapboxgl || {}));
-}(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global.TextureLayer = factory());
+}(this, (function () { 'use strict';
 
   class TextureLayer {
     constructor(id, tileJson, onAddCallback, renderCallback, preRenderCallback) {
@@ -72,8 +72,6 @@
     }
   }
 
-  exports.TextureLayer = TextureLayer;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return TextureLayer;
 
 })));

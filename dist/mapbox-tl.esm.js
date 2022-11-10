@@ -66,4 +66,4 @@ class TextureLayer {
   }
 }
 
-export { TextureLayer };
+export default TextureLayer;
