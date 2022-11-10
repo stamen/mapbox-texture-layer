@@ -16,14 +16,14 @@ export default [{
         entry: './src/TextureLayer.js',
         file: 'dist/mapbox-tl.umd.js',
         format: 'umd',
-        name: 'mapboxgl',
+        name: 'TextureLayer',
         extend: true
       },
       {
         entry: './src/TextureLayer.js',
         file: 'demo/mapbox-tl.umd.js',
         format: 'umd',
-        name: 'mapboxgl',
+        name: 'TextureLayer',
         extend: true
       }],
       plugins: [ 

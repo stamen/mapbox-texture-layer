@@ -1,5 +1,5 @@
 
-export class TextureLayer {
+export default class TextureLayer {
   constructor(id, tileJson, onAddCallback, renderCallback, preRenderCallback) {
     this.map = null;
     this.gl = null;
